@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript4</title>
+</head>
+
+<body>
+    <script>
+        let num1;
+        let num2;
+        let operacao;
+        let resultado;
+
+        // O resultado no prompt será automaticamente convertido em Number
+        num1 = Number(prompt('Insira um número'));
+        num2 = Number(prompt('Insira um número'));
+        operacao = prompt('Insira a operação');
+
+        // if
+        if (num1 > 5) {
+            alert(`Maior que 5`);
+        } else if (num1 == 5) {
+            alert(`Igual a 5`);
+        } else {
+            alert(`Menor que 5`);
+        }
+
+        // switch / case
+        switch (operacao) {
+            case '+':
+                resultado = num1 + num2;
+                alert(resultado);
+                break;
+            case '-':
+                resultado = num1 - num2;
+                alert(resultado);
+                break;
+            case '*':
+                resultado = num1 * num2;
+                alert(resultado);
+                break;
+            case '/':
+                resultado = num1 / num2;
+                alert(resultado);
+                break;
+            default:
+                alert('Que droga é essa? ');
+        }
+    </script>
+</body>
+
+</html>

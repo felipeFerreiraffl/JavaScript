@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.título {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: azure;
+}
+.convertor {
+    display: flex;
+    justify-content: center;
+}
+.convertor div {
+    margin-bottom: 3%;
+}
+#fah {
+    margin-top: 10%;
+}
+#fah , #ke {
+    margin-bottom: 10%;
+}

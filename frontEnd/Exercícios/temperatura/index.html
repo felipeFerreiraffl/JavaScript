@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="título">
+        <header>
+            <h1>Convertor de Temperatura</h1>
+        </header>
+    </div>
+    <div class="convertor">
+        <main>
+            <div id="fah">
+                <h2>Fahrenheit</h2>
+                <div>
+                    <label>Coloque a temperatura em °C: <input type="number" id="graus1"></label>
+                    <button onclick="fahren()">Converter</button>
+                </div>
+                <div>
+                    <label>Resultado: <output id="resultado1"></output></label>
+                </div>
+            </div id="ke">
+            <h2>Kelvin</h2>
+            <div>
+                <label>Coloque a temperatura em °C: <input type="number" id="graus2"></label>
+                <button onclick="kel()">Converter</button>
+            </div>
+            <div>
+                <label>Resultado: <output id="resultado2"></output></label>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

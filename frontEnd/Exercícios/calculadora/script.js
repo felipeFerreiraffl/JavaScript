@@ -4,12 +4,45 @@ var numeros = [];
 var operadores = [];
 
 function printa(dado) {
-  formula += dado;
+  if (dado == '+' || dado == '-' || dado == 'x' || dado == '/' || dado == 'e') {
+    numeros.push(Number(numeros));
+    operadores.push(dado);
+    numero = '';
+  } else {
+    formula += dado;
+    numero += dado;  
+  }
+
   document.getElementById('formula').innerText = formula;
 }
 
 function calcula() {
+  printa('e');
 
+  let resultado;
+  for (let i = 0; i < numeros.length; i++) {
+    switch(operadores[i]) {
+      case '+':
+        resultado = numeros[i] + numeros[i + i];
+        break;
+        
+      case '-':
+        resultado = numeros[i] - numeros[i + i];
+        break;
+
+      case 'x':
+        resultado = numeros[i] * numeros[i + i];
+        break;
+      
+      case '/':
+        resultado = numeros[i] / numeros[i + i];
+        break;
+      
+      default:
+        alert(`Valor não encontrado`);
+        break;
+    }
+  }
 }
 
 function apaga() {

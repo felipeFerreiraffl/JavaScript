@@ -2,8 +2,8 @@ var qtdAlunos = 3;
 var qtdNotas = 4;
 
 function calcula() {
-    let mediaSoma;
     let mediaGeral;
+    let mediaSoma = 0;
 
     // Repetições em cada aluno
     for (let aluno = 1; aluno <= qtdAlunos; aluno++){
@@ -14,8 +14,6 @@ function calcula() {
         for (let nota = 1; nota <= qtdNotas; nota++) {
             notaParcial = Number(document.getElementById(`nota${aluno}${nota}`).value);
             notaTotal += notaParcial;
-
-            console.log(notaTotal);
 
         }
 
@@ -38,11 +36,11 @@ function calcula() {
                 }
         }
 
-        // mediaSoma += media;
+        mediaSoma += media;
 
     }
 
-    // mediaGeral = mediaSoma / qtdAlunos;
-    // document.getElementById('mediaGeral').innerText = mediaGeral;
+    mediaGeral = mediaSoma / qtdAlunos;
+    document.getElementById('mediaGeral').innerText = `Média geral: ${mediaGeral}`;
 
 }

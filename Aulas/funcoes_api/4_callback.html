@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let seg = 0;
+        let min = 0;
+
+        var segMenosDez = (segundo) => {
+            if (segundo < 10) {
+                return '0' + segundo;
+            } else {
+                return segundo;
+            }
+        }
+
+        var minMenosDez = (minuto) => {
+            if (minuto < 10) {
+                return '0' + minuto;
+            } else {
+                return minuto;
+            }
+        }
+
+        const tempo = () => {
+            document.querySelector('body').innerHTML = ('<h1>' + (segMenosDez(min)) + ':' + (minMenosDez(seg += 1)) + '</h2>');
+            
+            if (seg >= 59) {
+                seg = 0;
+                min++;
+            }
+        }
+
+        // Determinação de tempo de ativação de uma função
+        setInterval(tempo, 1000);
+    </script>
+</body>
+</html>

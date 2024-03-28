@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Função anônima: serve para chamar funções dentro de outras
+        // Função que se autochama > IIFE (Immediately Invoke Function Express)
+        (function(a, b){
+            alert(a + b);
+        })(5, 5); // Autochamada da função
+
+        // Função anônima atribuída a uma variável > Function Express
+        const alertar = function(a, b) {
+            alert(a + b);
+        }
+
+        alertar(2, 2);
+    </script>
+</body>
+</html>
